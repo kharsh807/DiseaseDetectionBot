@@ -93,8 +93,8 @@ for cluster in range(n_clusters):
 
 # Initialize the NVIDIA API client
 client = OpenAI(
-    base_url="https://integrate.api.nvidia.com/v1",
-    api_key="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"
+    base_url="",
+    api_key=None  # Removed API key for security
 )
 
 # Function to extract symptoms from user input

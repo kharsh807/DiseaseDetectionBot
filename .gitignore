@@ -74,4 +74,8 @@ temp_report.pdf
 Sample-filled-in-MR.pdf
 WM17S.pdf
 
+# Allow DiseasePred directory and its contents
+!DiseasePred/
+!DiseasePred/**
+
 # Keep this file at workspace root to control top-level ignores

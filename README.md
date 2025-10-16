@@ -86,3 +86,23 @@ Detailed documentation for individual scripts can be found in their respective d
 ## Result Samples
 
 Application outputs and screenshots can be found in the `ResultScreenShots/` directory
+
+## Speech Recognition
+
+This project uses the Vosk speech recognition model for English. The model is not included in the repository to reduce size.
+
+### Download Instructions
+
+1. Visit the [Vosk Model Repository](https://alphacephei.com/vosk/models).
+2. Download the `vosk-model-small-en-us-0.15` model.
+3. Extract the model into the `vosk-model-small-en-us-0.15/` directory at the root of this project.
+
+Ensure the directory structure matches the following:
+```
+vosk-model-small-en-us-0.15/
+├── README
+├── am/
+├── conf/
+├── graph/
+└── ivector/
+```

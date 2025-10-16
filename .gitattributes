@@ -1,0 +1,11 @@
+# Git LFS attributes for large model and data files
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.pb filter=lfs diff=lfs merge=lfs -text
+*.onnx filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.ckpt filter=lfs diff=lfs merge=lfs -text
+*.tflite filter=lfs diff=lfs merge=lfs -text
+vosk-model-small-en-us-0.15/** filter=lfs diff=lfs merge=lfs -text
+
+# If you plan to use LFS, run: git lfs install; git lfs track "*.pt" "*.pb" "vosk-model-small-en-us-0.15/**"

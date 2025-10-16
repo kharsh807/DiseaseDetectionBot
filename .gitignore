@@ -1,0 +1,77 @@
+# Root .gitignore for the DiseaseDetectionBot workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs / editors
+.vscode/
+.idea/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+
+# Virtual environments
+env/
+venv/
+.venv/
+**/pyvenv.cfg
+Lib/
+Scripts/
+
+# Explicit virtualenv internals (ignore venvs created inside project subfolders)
+**/Lib/
+**/Scripts/
+*.whl
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Test / coverage
+.coverage
+.pytest_cache/
+.tox/
+.nox/
+
+# Logs
+*.log
+
+# Machine learning model binaries (ignore large files workspace-wide)
+**/*.pt
+**/*.pth
+**/*.pb
+**/*.onnx
+**/*.h5
+**/*.ckpt
+**/*.tflite
+
+# Common archives
+*.zip
+*.tar.gz
+*.tgz
+
+# Node / other
+node_modules/
+
+# Ignore environment and model directories
+# virtualenv folder created inside project
+.diseasepred/
+diseasepred/
+# Vosk model directory
+vosk-model-small-en-us-0.15/
+# model directories
+models/
+# Common large reports you may want to keep out
+temp_report.pdf
+Sample-filled-in-MR.pdf
+WM17S.pdf
+
+# Keep this file at workspace root to control top-level ignores
